@@ -1,0 +1,32 @@
+{
+
+  "description": "A Firefox extension which enables user to translate texts that are written in one keyboard layout mapping to another one. See https://github.com/RYNEQ/FireKeyboardLayoutTranslator",
+  "manifest_version": 2,
+  "name": "FireKeyboardLayoutTranslator",
+  "version": "0.1",
+  "homepage_url": "https://github.com/RYNEQ/FireKeyboardLayoutTranslator",
+  "icons": {
+    "48": "icons/FKLT-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],  
+
+  "browser_action": {
+    "default_icon": "icons/FKLT-32.png",
+    "default_title": "FireKeyboardLayoutTranslator"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }, 
+
+
+  "commands": {
+    "translate-layout": {
+      "suggested_key": { "default": "Ctrl+6" },
+      "description": "Trigger Translate Layout"
+    }
+  }    
+}
